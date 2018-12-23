@@ -2,7 +2,7 @@
   <div id="app">
     <router-view/>
      <div class="show-slide-btn">
-        <button @click="()=>isShowSlide=!isShowSlide">show</button>
+        <button @click="()=>isShowSlide=!isShowSlide">☰</button>
     </div>
     <slideMemu v-model="isShowSlide" ref="slide"/>
   </div>
@@ -11,13 +11,18 @@
 <script>
 import slideMemu from 'components/slideMenu/index'
 export default {
+  created() {
+    this.$router.afterEach((to, from)=> {
+      this.$refs.slide.close()
+    })
+  },
   components: {slideMemu },
   name: 'App',
-  watch: {
-    $route(to,from){
-      this.$refs.slide.close()
-    }
-  },
+  // watch: {
+  //   $route(to,from){
+  //     this.$refs.slide.close()
+  //   }
+  // },
    data() {
     return {
       isShowSlide: false
@@ -34,5 +39,14 @@ export default {
     position: absolute;
     top: 20px;
     left: 20px;
+}
+.show-slide-btn button {
+  color: rgb(7, 92, 177);
+  background-color: deepskyblue;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.6;
+  width: 25px;
+  height: 25px;
 }
 </style>

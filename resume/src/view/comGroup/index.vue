@@ -25,17 +25,11 @@
       </van-collapse-item>
     </van-collapse>
   </div>
-    <div class="show-slide-btn">
-        <button @click="showSlideToggle">show</button>
-    </div>
-    <slideMemu v-model="isShowSlide"/>
   
   </article>
 </template>
 <script>
-import slideMemu from 'components/slideMenu/index'
 export default {
-  components: {slideMemu },
   data() {
     return {
       activeNames: [],
