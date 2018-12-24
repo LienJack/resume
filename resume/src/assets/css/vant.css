@@ -1,0 +1,19 @@
+.demo-button-row {
+  margin-bottom: 10px;
+}
+.van-doc-demo-block:first-of-type .van-doc-demo-block__title {
+  padding-top: 20px;
+}
+.van-doc-demo-block__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(69,90,100,.6);
+  padding: 35px 15px 15px;
+}
+.van-doc-demo-block {
+  padding: 0 15px;
+}
+body {
+  background-color: rgb(247, 247, 247)
+}

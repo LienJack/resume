@@ -7,6 +7,7 @@ import router from './router'
 import '@/assets/css/reset.css'
 import '@/assets/css/animate.css'
 import '@/assets/css/font.css'
+import '@/assets/css/vant.css'
 
 import Vant from 'vant';
 import 'vant/lib/index.css';

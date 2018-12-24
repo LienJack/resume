@@ -64,9 +64,7 @@
 // import 'assets/css/resume.css'
 import iSlider from 'assets/frame/scroll'
 import showCanvas from './canvas.js'
-import slideMemu from 'components/slideMenu/index'
 export default {
-    components: {slideMemu },
   mounted () {
     var myslider=new iSlider({
     wrap:'#wrap',
