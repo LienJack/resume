@@ -2,8 +2,8 @@
   <article>
       <van-nav-bar
       title="icon"
-      left-text="返回"
-      @click-left="onClickLeft"
+      right-text="返回"
+      @click-right="onClickLeft"
     />
   <section>
     <van-icon name="chat" />

@@ -1,7 +1,7 @@
 <template>
   <article>
   <div class="panel">
-      <van-collapse v-model="activeNames" >
+    <van-collapse v-model="activeNames" >
       <van-collapse-item title="基础组件" name="1">
         <van-cell title="Button 按钮" is-link  to="/baseCom/button"/>
         <van-cell title="Cell 单元格" is-link to="/baseCom/cell"/>

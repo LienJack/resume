@@ -12,7 +12,17 @@ import '@/assets/css/vant.css'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
+// import 'prismjs'
+// import 'prismjs/themes/prism.css'
+// import Prism from 'vue-prism-component'
+
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+Vue.use(mavonEditor)
+
 Vue.use(Vant);
+
+// Vue.component('Prism',Prism)
 
 Vue.config.productionTip = false
 

@@ -36,9 +36,10 @@ export default {
 
 <style scoped>
 .show-slide-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    z-index: 1800;
 }
 .show-slide-btn button {
   color: rgb(7, 92, 177);
@@ -48,5 +49,6 @@ export default {
   opacity: 0.6;
   width: 25px;
   height: 25px;
+  z-index: 2000;
 }
 </style>

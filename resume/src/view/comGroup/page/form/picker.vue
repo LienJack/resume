@@ -2,8 +2,8 @@
   <article>
       <van-nav-bar
       title="pick"
-      left-text="返回"
-      @click-left="onClickLeft"
+      right-text="返回"
+      @click-right="onClickLeft"
     />
   <section class="van-doc-demo-block">
       <h2 class="van-doc-demo-block__title">选择器的用法</h2> 

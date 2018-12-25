@@ -12,10 +12,14 @@
   "dependencies": {
     "install": "^0.12.2",
     "material-design-icons": "^3.0.1",
+    "mavon-editor": "^2.6.17",
     "npm": "^6.5.0",
+    "prismjs": "^1.15.0",
+    "text-loader": "0.0.1",
     "vant": "^1.5.0",
     "vue": "^2.5.2",
     "vue-css-modules": "^1.2.0",
+    "vue-prism-component": "^1.1.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
