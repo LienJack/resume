@@ -4,7 +4,8 @@
         <div class="item item-1">
             <canvas id="starCanvas" class="canvas-star"></canvas>
             <div class="box column">
-               <img class="img-alice float-down" src="static/alice.png" alt="" srcset="">
+               <!-- <img class="img-alice float-down" src="static/alice.png" alt="" srcset=""> -->
+               <img class="img-alice float-down" src="http://m.qpic.cn/psb?/V14eRoy23cwEhQ/o2AXTRpAYRkJgGDW.mBVduQcTTgKizfUKYLTDWz8ekY!/b/dAgBAAAAAAAA&bo=aQKQAQAAAAADB9g!&rf=viewer_4" alt="" srcset="">
                <div class="title float-down">
                     <h1>lien</h1>
                     <h3>个人简历</h3>
