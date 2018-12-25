@@ -3,7 +3,7 @@
     <div class="wrap" id="wrap">
         <div class="item item-1">
             <canvas id="starCanvas" class="canvas-star"></canvas>
-            <!-- <div class="box column">
+            <div class="box column">
                <img class="img-alice float-down" src="static/alice.png" alt="" srcset="">
                <div class="title float-down">
                     <h1>lien</h1>
@@ -13,7 +13,7 @@
                 <p>邮箱 <span>1947568044@qq.com</span></p>
                 <p>微信 <span>blackofsnow</span></p>
             </footer>
-            </div> -->
+            </div>
            
         </div>
 
