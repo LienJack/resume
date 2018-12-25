@@ -5,7 +5,7 @@
       <header>
         <div class="user"> 
           <div class="user-img">
-
+            <img src="static/touxiang.jpg">
         </div>
         <h3>lien</h3>
         
@@ -16,7 +16,8 @@
           <li>
             <router-link to="/index" tag="div">
               <i class="material-icons">portrait</i>
-              <p>个人简历</p>
+              <!-- <p>个人简历</p> -->
+              <p>首页</p>
             </router-link>
           </li>
           <li>
@@ -26,15 +27,16 @@
             </router-link >
           </li>
           <li>
-            <div>
+            <router-link to="/knowledge/index" tag="div">
               <i class="material-icons">chrome_reader_mode</i>
               <p>知识库</p>
-            </div>
+            </router-link>
           </li>
           <li>
             <div>
               <i class="material-icons">grade</i>
-              <p>个人爱好</p>
+              <!-- <p>个人经历</p> -->
+              <p>爱好</p>
             </div>
           </li>
            <li>
@@ -86,21 +88,23 @@ export default {
 
 <style scoped>
 .mask {
-  position:absolute;
+  position:fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: black;
   opacity: 0.3;
+  z-index: 1600;
+  pointer-events: visible;
 }
 aside {
   width: 250px;
   top: 0;
   bottom: 0;
   background-color: white;
-  position: absolute;
-  z-index: 100;
+  position: fixed;
+  z-index: 2000;
 }
 aside header {
   height: 200px;
@@ -142,6 +146,17 @@ nav ul div p {
 }
 .mask-fade-enter, .mask-fade-leave-to {
   transition: all 1s;
+}
+.user-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.material-icons {
+  width: 30px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
 }
 </style>
 

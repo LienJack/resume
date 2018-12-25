@@ -2,8 +2,8 @@
   <article>
       <van-nav-bar
       title="switch"
-      left-text="返回"
-      @click-left="onClickLeft"
+      right-text="返回"
+      @click-right="onClickLeft"
     />
    <section class="van-doc-demo-block">
       <h2 class="van-doc-demo-block__title">基础用法</h2>
