@@ -6,6 +6,7 @@
     :value="value"
     :subfield="false"
     :editable="false"
+    @change="show"
       />
   </div>
 </template>
@@ -30,6 +31,17 @@ export default {
       value: '# 404没有找到文章',
     }
   },
+  methods:{
+    show(value,render) {
+      console.log(render)
+    }
+  }
 }
 </script>
+<style scoped>
+.editor {
+  min-height: 150vh;
+}
+</style>
+
 
