@@ -86,7 +86,7 @@ export default {
             that.updateEchart(index)
         }
     });
-    
+   
     
     this.updateEchart(myslider.index)
   },
