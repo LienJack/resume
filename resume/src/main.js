@@ -12,6 +12,7 @@ import '@/assets/css/vant.css'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
+
 // import 'prismjs'
 // import 'prismjs/themes/prism.css'
 // import Prism from 'vue-prism-component'

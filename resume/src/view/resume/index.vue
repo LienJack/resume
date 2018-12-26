@@ -14,17 +14,25 @@
                 <p>微信 <span>blackofsnow</span></p>
             </footer>
             </div>
-           
         </div>
 
         <div class="item item-2">
             <div class="box">
-                <h1 class="hide">救星驾到 秒变高富帅秘诀 </h1>
-                <div class="mod_container">
-                    <p class="sprite text_1"></p>
-                    <p class="sprite text_2"></p>
-                    <div class="sprite scene"></div>
-                </div>
+                <div id="echarts-tree" style="height:100vh; width:100vw"></div>
+            </div>
+        </div>
+        <div class="item item-3">
+            <div class="box">
+                <div id="echarts-radar" style="height:100vh; width:100vw"></div>
+            </div>
+        </div>
+        <div class="item item-4">
+            <div class="box">
+              <div>
+                <h3 style="text-align:center">超哥牛逼</h3> 
+                <br/>
+                <h4>点击知识库-》js-》第一个开启md编程</h4>
+              </div>
             </div>
         </div>
 
@@ -64,31 +72,45 @@
 // import 'assets/css/resume.css'
 import iSlider from 'assets/frame/scroll'
 import showCanvas from './canvas.js'
+import { radarOption, treeOption } from 'config/echart.config.js'
+
+var echarts = require('echarts');
 export default {
   mounted () {
+    // 滑动
+    var that = this
     var myslider=new iSlider({
-    wrap:'#wrap',
-    item:'.item',
-    onslide:function (index) {
-        if (index == 2) {
-            document.getElementById('J_joinNum').innerHTML=parseInt(Math.random()*10000);
+        wrap:'#wrap',
+        item:'.item',
+        onslide:function (index) {
+            that.updateEchart(index)
         }
-    }
-});
-// console.info(myslider)
-showCanvas()
+    });
+    
+    
+    this.updateEchart(myslider.index)
   },
   data() {
       return {
-          isShowSlide: true
+          isShowSlide: true,
+          myslider:null,
       }
   },
   methods: {
-    //   showSlideToggle() {
-    //       this.isShowSlide = !this.isShowSlide
-    //       console.log("1")
-    //   }
-  }
+      showRadar() {
+        var radar = echarts.init(document.getElementById('echarts-radar'));
+        radar.setOption(radarOption);
+      },
+      showTree() {
+        var tree = echarts.init(document.getElementById('echarts-tree'));
+        tree.setOption(treeOption);
+      },
+      updateEchart(index) {
+        index === 0 && showCanvas()
+        index === 1 && this.showTree()
+        index === 2 && this.showRadar()
+      }
+  },
 }
 </script>
 <style scoped>
@@ -123,13 +145,6 @@ article{
 }
 .img-alice {
     width: 300px;
-    /* opacity: 0;
-    transform: translate3d(0, -20%, 0) */
-}
-.play .img-alice {
-    /* opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: all 1.5s ease-out; */
 }
 .canvas-star{
     position: absolute;
@@ -178,8 +193,8 @@ article{
 }
 
 .item-1 {background: #143568;}
-.item-2 {background: #349b66;}
-.item-3 {background: #e05365;}
+.item-2 {background: white;}
+.item-3 {background: white;}
 .item-4 {background: #44a7cb;}
 .item-5 {background: #fc9590;}
 .item-6 {background: #d487b4;}
