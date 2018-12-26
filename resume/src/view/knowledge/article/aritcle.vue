@@ -33,7 +33,9 @@ export default {
   },
   methods:{
     show(value,render) {
-      console.log(render)
+      if(render) {
+        
+      }
     }
   }
 }
