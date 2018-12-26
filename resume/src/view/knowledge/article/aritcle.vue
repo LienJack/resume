@@ -26,6 +26,9 @@ export default {
       this.value = list.get(`${title}`)
     }
   },
+  beforeDestroy() {
+     document.getElementsByTagName('body')[0].style.overflowY= ""
+  },
   data() {
     return {
       value: '# 404没有找到文章',
@@ -34,10 +37,10 @@ export default {
   methods:{
     show(value,render) {
       if(render) {
-        
+        document.getElementsByTagName('body')[0].style.overflowY= "scroll"
       }
     }
-  }
+  },
 }
 </script>
 <style scoped>
