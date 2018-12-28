@@ -39,6 +39,15 @@
               <p>爱好</p>
             </div>
           </li>
+          <li>
+            <div>
+              <a href="./static/bird/index.html" >
+              <!-- <i class="material-icons">grade</i> -->
+              <!-- <p>个人经历</p> -->
+              <p>垃圾游戏</p>
+            </a >
+            </div>
+          </li>
            <li>
             <div @click="close">
               <i class="material-icons">reply</i>
