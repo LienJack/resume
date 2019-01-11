@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-     <div class="show-slide-btn">
-        <button @click="()=>isShowSlide=!isShowSlide">☰</button>
-    </div>
+      <i @click="()=>isShowSlide=!isShowSlide" class="material-icons show-slide-btn">settings</i>
     <slideMemu v-model="isShowSlide" ref="slide"/>
   </div>
 </template>
@@ -38,17 +36,14 @@ export default {
 .show-slide-btn {
     position: fixed;
     top: 10px;
-    left: 15px;
+    left: 10px;
     z-index: 1800;
 }
-.show-slide-btn button {
-  color: rgb(7, 92, 177);
-  background-color: deepskyblue;
-  border: none;
-  border-radius: 5px;
+.show-slide-btn  {
+  color: deepskyblue;
   opacity: 0.6;
-  width: 25px;
-  height: 25px;
+  font-size:160%;
   z-index: 2000;
+  cursor:pointer;
 }
 </style>

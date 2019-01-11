@@ -1,203 +1,252 @@
 <template>
   <article>
     <div class="wrap" id="wrap">
-        <div class="item item-1">
-            <canvas id="starCanvas" class="canvas-star"></canvas>
-            <div class="box column">
-               <img class="img-alice float-down" src="static/alice.png" alt="" srcset="">
-               <div class="title float-down">
-                    <h1>lien</h1>
-                    <h3>个人简历</h3>
-               </div>
-            <footer class="float-up">
-                <p>邮箱 <span>1947568044@qq.com</span></p>
-                <p>微信 <span>blackofsnow</span></p>
-            </footer>
-            </div>
-        </div>
 
-        <div class="item item-2">
-            <div class="box">
-                <div id="echarts-tree" style="height:100vh; width:100vw"></div>
-            </div>
+      <!-- item-1 -->
+
+      <div class="item item-1">
+        <canvas id="starCanvas" class="canvas-star"></canvas>
+        <div class="box">
+          <img class="img-alice float-down" src="static/alice.png">
+          <div class="float-down">
+            <h2>lien</h2>
+            <h4>个人简历</h4>
+          </div>
+          <footer class="float-up">
+            <p>邮箱 <span>1947568044@qq.com</span></p>
+            <p>电话 <span>18819467289</span></p>
+          </footer>
         </div>
-        <div class="item item-3">
-            <div class="box">
-                <div id="echarts-radar" style="height:100vh; width:100vw"></div>
+      </div>
+
+      <!-- item-2 -->
+
+      <div class="item item-2">
+        <div class="box column">
+          <img src="static/school.svg" class="school float-down">
+          <img src="static/cloud1.svg" class="cloud1 fade">
+          <img src="static/cloud2.svg" class="cloud2 fade">
+          <div class="column">
+            <div class="float-up">
+              <h3 class="title-h2">教育背景</h3>
+              <h4 class="title-h3">华南农业大学（本科）</h4>
+              <h4 class="title-h3">电子信息工程</h4>
+              <h4 class="title-h3">2013-2017</h4>
             </div>
+          </div>
         </div>
-        <div class="item item-4">
-            <div class="box">
+      </div>
+  
+      <div class="item item-3">
+        <div class="box">
+          <div class="column company float-up">
+            <div class="company-logo">
+              <img src="static/xingfuLogo.png">
+            </div>
+            <div class="company-job">
+              <h4>幸福网络-前端工程师</h4>
+              <div>时间：2018年4月-至今</div>
+                <ol>
+                  <li>
+                    <a href="">四川公安出入境</a>、
+                    <a href="">泸州公安</a>、
+                    <a href="">四川邮政EMS</a> 等公众号的功能迭代和维护。
+                  </li>
+                  <li>将旧项目jQuery用Vue重构</li>
+                  <li>编写公共组件。
+                    <router-link to="/comGroup">点击查看</router-link>
+                  </li>
+                </ol>
+            </div>
+          </div>
+
+          <div class="column company float-up delay-1">
+            <div class="company-logo">
+              <img src="static/ccLogo.png" >
+            </div>
+            <div class="company-job">
+              <h4>网易游戏CC语音-直播运营</h4>
+              <p>时间:2016年4月-2017年4月</p>
               <div>
-                <h3 style="text-align:center">超哥牛逼</h3> 
-                <br/>
-                <h4>点击知识库-》js-》第一个开启md编程</h4>
+                <ol>
+                  <li>
+                    活动视频前期拍摄，后期剪辑、调色和特效的视频制作<strong>共53部视频</strong>
+                  </li>
+                  <li>
+                    电竞比赛的分镜脚本、舞台搭建、现场舞台控制、后期活动视频回顾剪辑<strong>8场大型活动和87场小型活动</strong>
+                  </li>
+                </ol>
               </div>
             </div>
+          </div>
         </div>
-
-
-    </div>
-
-    <!-- 加载提示 _S -->
-    <div class="global">
-        <div class="slider"><span class="sprite_global"></span></div>
-    </div>
-    <div class="mod_loading" id="loading" style="display:none">
-        <div class="content">
-            <div class="progress"><span id="progress_bg" style="width:0;"></span></div>
-            <p>Loading...</p>
+      </div>
+  
+      <!-- <div class="item item-4">
+              <div class="box column">
+                  <div>基本技能</div>
+                  <div id="echarts-tree" style="height:80vh; width:100vw"></div>
+              </div>
+          </div> -->
+  
+      <div class="item item-4">
+        <div class="box column">
+          <h3 class="float-down">专业技能</h3>
+          <div id="echarts-radar" style="height:300px; width:300px;" class="float-down delay-1" ></div>
+          <div class="float-up delay-2">
+            <ul>
+              <li>具有扎实的JavaScript基础，熟练使用ES6+，喜欢分享，可见<a href="https://lienjack.github.io/Blog/">个人知识库</a>。</li>
+              <li>喜欢挑战挑战自己、刻意练习。有阅读源码和模仿造轮子的习惯。</li>
+            </ul>
+          </div>
         </div>
+      </div>
+  
+      <div class="item item-5">
+        <div class="box column">
+          <p class="float-up">点击左上角<i class="material-icons" style="font-size:18px;">settings</i>查看</p>
+          <ul>
+            <li class="float-up">
+              <h4>组件库</h4>
+              <p>个人编写的公用的vue组件</p>
+            </li>
+            <li class="float-up delay-1">
+              <h4>知识库</h4>
+              <p>个人的blog，里面有对JS,编写组件的心得</p>
+            </li>
+            <li class="float-up delay-2">
+              <h4>个人经历</h4 >
+              <p>过去个人的心路历程，可以更深了解我。</p>
+            </li>
+            <li class="float-up delay-3">
+              <h4>小游戏</h4>
+              <p>用canvas简单模拟了FlyBird</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item item-6">
+        <div class="box">
+          <h3 class="float-up">联系方式</h3>
+          <ul>
+            <li class="float-up delay-1">
+              <h4>微信</h4>
+              <img src="static/weixin.png" alt="">
+            </li>
+            <li class="float-up delay-2"> 
+              <h4>qq</h4>
+              <img src="static/qq.png" alt="">
+            </li>
+            <li class="float-up delay-3">
+              <h4>邮箱</h4>
+              <p>1947568044@qq.com</p>
+            </li>
+            <li class="float-up delay-4">
+              <h4>电话</h4>
+              <p>18819467289</p>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
     </div>
-    <!-- 加载提示 _E -->
-    <audio autoplay="" style="height:0;width:0;display:none" ></audio>
-    <!-- 播放状态 _S -->
-    <!-- btn_pause为暂停状态 -->
-    <div class="sprite_global btn_play" id="J_btnMusic" style="display:none"><i class="sprite_global"></i></div>
-    <!-- 播放状态 _E -->
-    <!-- 滑块 _E -->
-    <div class="m_share" style="display:none;" id="shareLayer">
-     
-        <!--这里的箭头指向要做判断，不同的平台指向不同-->
-        <!--箭头向上-->
-        <!-- <img id="shareimgup" src="http://imgcache.qq.com/mediastyle/mobile/event/20140318_ceremony_live/img/share_top.png?max_age=2592000" class="top" alt="点击上方分享按钮分享"/> -->
-        <!--箭头向下-->
-        <!-- <img id="shareimgdown" src="http://imgcache.qq.com/mediastyle/mobile/event/20140318_ceremony_live/img/share_bottom.png?max_age=2592000" class="bottom" alt="点击下方分享按钮分享"  style="display:none;"/> -->
-    </div>
-   
+  
   </article>
 </template>
 
 <script>
-// import 'assets/css/resume.css'
-import iSlider from 'assets/frame/scroll'
-import showCanvas from './canvas.js'
-import { radarOption, treeOption } from 'config/echart.config.js'
-
-var echarts = require('echarts');
-export default {
-  mounted () {
-    // 滑动
-    var that = this
-    var myslider=new iSlider({
-        wrap:'#wrap',
-        item:'.item',
-        onslide:function (index) {
-            that.updateEchart(index)
+  // import 'assets/css/resume.css'
+  
+  import iSlider from "assets/frame/scroll";
+  
+  import showCanvas from "./canvas.js";
+  
+  import {
+  
+    radarOption,
+  
+    treeOption
+  
+  } from "config/echart.config.js";
+  
+  
+  
+  var echarts = require("echarts");
+  
+  export default {
+  
+    mounted() {
+  
+      // 滑动
+  
+      var that = this;
+  
+      var myslider = new iSlider({
+  
+        wrap: "#wrap",
+  
+        item: ".item",
+  
+        onslide: function(index) {
+  
+          that.updateEchart(index);
+  
         }
-    });
-   
-    
-    this.updateEchart(myslider.index)
-  },
-  data() {
+  
+      });
+  
+  
+  
+      this.updateEchart(myslider.index);
+  
+    },
+  
+    data() {
+  
       return {
-          isShowSlide: true,
-          myslider:null,
-      }
-  },
-  methods: {
+  
+        isShowSlide: true,
+  
+        myslider: null
+  
+      };
+  
+    },
+  
+    methods: {
+  
       showRadar() {
-        var radar = echarts.init(document.getElementById('echarts-radar'));
+  
+        var radar = echarts.init(document.getElementById("echarts-radar"));
+  
         radar.setOption(radarOption);
+  
       },
+  
       showTree() {
-        var tree = echarts.init(document.getElementById('echarts-tree'));
+  
+        var tree = echarts.init(document.getElementById("echarts-tree"));
+  
         tree.setOption(treeOption);
+  
       },
+  
       updateEchart(index) {
-        index === 0 && showCanvas()
-        index === 1 && this.showTree()
-        index === 2 && this.showRadar()
+  
+        index === 0 && showCanvas();
+  
+        // index === 3 && this.showTree()
+  
+        index === 3 && this.showRadar();
+  
       }
-  },
-}
+  
+    }
+  
+  };
 </script>
 <style scoped>
-article{
-  height: 100vh;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: relative;
-}
-.float-down {
-    opacity: 0;
-    transform: translate3d(0,-30px,0)
-}
-.play .float-down {
-    opacity: 1;
-    transform: translate3d(0,-0,0);
-    transition: all 1s ease-out;
-}
-.float-up {
-    opacity: 0;
-    transform: translate3d(0,30px,0)
-}
-.play .float-up {
-    opacity: 1;
-    transform: translate3d(0,0,0);
-    transition: all 1s ease-out;
-}
-.img-alice {
-    width: 300px;
-}
-.canvas-star{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background-color: #143568; */
-}
-.column {
-    flex-direction: column;
-}
-.show-slide-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-.item-1 .title {
-    margin-top: 30px;
-    text-align: center;
-    color: aliceblue;
-    
-}
-.item-1 .title h1 {
-    font-size: 35px;
-    line-height: 1;
-}
-.item-1.play .title h1 {
-    transition-delay: 0.6s
-}
-.item-1 .title h3 {
-    margin-top: 10px;
-    font-size: 20px;
-}
-.item-1.play .title h3 {
-    transition-delay: 0.8s
-}
-.item-1 footer {
-    position: absolute;
-    bottom: 35px;
-    display: flex;
-    flex-direction: column;
-    color: aliceblue;
-    text-align: center;
-}
-.item-1 footer  p {
-    line-height: 1.5;
-}
-
-.item-1 {background: #143568;}
-.item-2 {background: white;}
-.item-3 {background: white;}
-.item-4 {background: #44a7cb;}
-.item-5 {background: #fc9590;}
-.item-6 {background: #d487b4;}
+  @import url("./main.css");
 </style>
 
 

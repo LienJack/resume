@@ -1,0 +1,78 @@
+.mask {
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1600;
+  pointer-events: visible;
+}
+aside {
+  width: 250px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  position: fixed;
+  z-index: 2000;
+}
+aside header {
+  height: 200px;
+  background-color: steelblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.user {
+  margin-left: 20px;
+}
+.user-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+.user h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+}
+
+nav ul div {
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+nav ul a {
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav ul div p {
+  padding-left: 10px;
+}
+
+
+.mask-fade-enter-active , .mask-fade-leave-active {
+  opacity: 0;
+}
+.mask-fade-enter, .mask-fade-leave-to {
+  transition: all 1s;
+}
+.user-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.material-icons {
+  width: 30px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
