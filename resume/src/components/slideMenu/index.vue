@@ -21,10 +21,10 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/comGroup">
+            <a href="https://lienjack.github.io/alice-ui-demo/">
               <i class="material-icons">card_travel</i>
               <p>组件库</p>
-            </router-link >
+            </a >
           </li>
           <li>
             <a href="https://lienjack.github.io/Blog/">
@@ -38,12 +38,12 @@
               <p>个人经历</p>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="./static/bird/index.html" >
               <i class="material-icons">gamepad</i>
               <p>垃圾游戏</p>
             </a >
-          </li>
+          </li> -->
            <li>
             <div @click="close">
               <i class="material-icons">reply</i>
